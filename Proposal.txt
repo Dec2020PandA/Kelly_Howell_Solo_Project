@@ -1,0 +1,22 @@
+Engineer's Toolbox 
+
+This will be an information based website with discussion forums for various fields of study
+involved in engineering such as Physics, Electrical, Thermodynamic, and Fluid Mechanics.
+ ---- MVP Features ----
+   - Login / Registration page
+
+   - Each field will have a dedicated page with discussion board where users can start and 
+     contribute to threads
+
+   - useful apps, for starters, a live "trajectory calculator" on the physics page that
+     will take user inputs and plot the motion of a projectile on a graph.
+
+   - apps will be available to non registered users, but only logged in users will be able
+     to use the discussion boards. 
+
+ ---- Backlog ----
+   - Add a commonly used equation and variables section to each page
+   
+   - Entropy value lookup table for Thermodynamics page
+   
+   - Reynolds number calculator / Moody Chart for Fluid Mechanics page 
