@@ -1,0 +1,50 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: helvetica;
+	border: 1px solid red;
+}
+
+#wrapper{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff1ea;
+	padding: 20px 20px;
+	box-shadow: 3px 0px 5px #fff222, -3px 0px 5px #fff222; 
+}
+ul li {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 auto;
+	list-style: none;
+	display: block;
+	padding: 50px 5px;
+	text-align: center; 
+}
+
+ul li a {
+	text-decoration: none;
+}
+
+#physics-li {
+	background-image: url("/images/physics.jpg");
+}
+#electricity-li {
+	background-image: url("/images/physics.jpg");
+}
+#thermo-li {
+	background-image: url("/images/physics.jpg");
+}
+#fluid-li {
+	background-image: url("/images/physics.jpg");
+}
+.content{
+	width: 596px;
+	height: 1000px;
+	vertical-align: top;
+	display: inline-block;
+}
+#main-content{
+	width: 500px;
+
+	}
