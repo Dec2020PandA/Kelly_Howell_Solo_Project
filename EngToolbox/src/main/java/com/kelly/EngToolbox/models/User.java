@@ -41,7 +41,9 @@ public class User{
 	@Column (updatable = false)
 	private Date createdAt;
 	private Date updatedAt;
-	@OneToMany(mappedBy="poster", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy="poster", cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Discussion> discussions;
+	@OneToMany(mappedBy="msgPoster", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<UMsg> msgs;
 	public User() {
 		

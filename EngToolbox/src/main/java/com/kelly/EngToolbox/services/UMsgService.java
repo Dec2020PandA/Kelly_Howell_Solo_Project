@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.kelly.EngToolbox.models.Discussion;
 import com.kelly.EngToolbox.models.UMsg;
 import com.kelly.EngToolbox.repositories.UMsgRepository;
 
@@ -18,8 +19,8 @@ public class UMsgService{
 		return mRepo.save(msg);
 	}
 	//read
-	public List<UMsg> allByTopic(String topic){
-		return mRepo.findAllByTopic(topic);
+	public List<UMsg> allByDiscussion(Discussion discussion){
+		return mRepo.findAllByDiscussion(discussion);
 	}
 		// find by user
 	

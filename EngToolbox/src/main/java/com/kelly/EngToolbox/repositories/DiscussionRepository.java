@@ -6,10 +6,12 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import com.kelly.EngToolbox.models.Discussion;
-import com.kelly.EngToolbox.models.UMsg;
 
 @Repository
-public interface UMsgRepository extends CrudRepository<UMsg, Long>{
+public interface DiscussionRepository extends CrudRepository<Discussion, Long>{
+	List<Discussion> findAllByTopic(String topic);
 	
-	List<UMsg> findAllByDiscussion(Discussion discussion);
+	Discussion findByTopicAndId(String topic, Long id);
+	
+	void deleteByTopicAndId(String topic, Long id);
 }

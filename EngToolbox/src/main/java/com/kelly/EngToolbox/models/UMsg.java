@@ -21,11 +21,12 @@ public class UMsg{
 	private Long id;
 	@NotBlank
 	private String content;
-	@NotBlank
-	private String topic;
+	@ManyToOne(fetch = FetchType.EAGER) //get all messages for a discussion post
+	@JoinColumn(name="title_id")
+	private Discussion discussion;
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="user_id")
-	private User poster;
+	private User msgPoster;
 	@Column(updatable=false)
 	private Date createdAt;
 	private Date updatedAt;
@@ -53,17 +54,18 @@ public class UMsg{
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public User getPoster() {
-		return poster;
+
+	public User getMsgPoster() {
+		return msgPoster;
 	}
-	public void setPoster(User poster) {
-		this.poster = poster;
+	public void setMsgPoster(User msgPoster) {
+		this.msgPoster = msgPoster;
 	}
-	public String getTopic() {
-		return topic;
+	public Discussion getDiscussion() {
+		return discussion;
 	}
-	public void setTopic(String topic) {
-		this.topic = topic;
+	public void setDiscussion(Discussion discussion) {
+		this.discussion = discussion;
 	}
 	public Date getCreatedAt() {
 		return createdAt;
